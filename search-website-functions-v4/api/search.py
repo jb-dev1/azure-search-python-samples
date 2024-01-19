@@ -123,6 +123,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
         search_results = search_client.search(
             search_text=q,
+            search_mode="all",
             top=top,
             skip=skip,
             facets=facetKeys,
